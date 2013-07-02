@@ -1,0 +1,21 @@
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head> 
+  <title>build.fan</title>
+  <link rel='stylesheet' type='text/css' href='../../doc.css'/>
+</head>
+<body><div class='src'>
+<pre>
+<span class='k'>using</span> build
+
+<span class='k'>class</span> Build : BuildJava
+<span class='b'>{</span>
+
+  <span class='k'>new</span> make<span class='b'>()</span>
+  <span class='b'>{</span>
+    jar = devHomeDir.uri + <span class='u'>`lib/java/ext/hello.jar`</span>
+    packages = <span class='b'>[</span><span class='s'>"corp.*"</span><span class='b'>]</span>
+  <span class='b'>}</span>
+<span class='b'>}</span></pre>
+</div>
+  </body></html>

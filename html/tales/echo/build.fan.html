@@ -1,0 +1,24 @@
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head> 
+  <title>build.fan</title>
+  <link rel='stylesheet' type='text/css' href='../../doc.css'/>
+</head>
+<body><div class='src'>
+<pre>
+<span class='k'>using</span> tales
+
+<span class='k'>class</span> Build : TalesBuildPod
+<span class='b'>{</span>
+		
+  <span class='k'>override</span> Void setProperties<span class='b'>(){</span>
+	File f := File<span class='b'>(</span> <span class='b'>(</span>typeof-&gt;sourceFile<span class='b'>)</span>-&gt;toUri<span class='b'>)</span>
+	podName = f.parent.name
+	summary    = <span class='s'>"The Cool $podName app"</span>
+	depends    = <span class='b'>[</span><span class='s'>"sys 1.0+"</span>, <span class='s'>"util 1.0+"</span>,<span class='s'>"web 1.0+"</span>, <span class='s'>"concurrent 1.0+"</span>, <span class='s'>"tales 1.0+"</span>,  <span class='s'>"email 1.0+"</span>, <span class='s'>"sql 1.0+"</span><span class='b'>]</span>
+  <span class='b'>}</span>	
+
+<span class='b'>}</span>
+</pre>
+</div>
+  </body></html>

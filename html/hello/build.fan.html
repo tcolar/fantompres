@@ -1,0 +1,23 @@
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head> 
+  <title>build.fan</title>
+  <link rel='stylesheet' type='text/css' href='../doc.css'/>
+</head>
+<body><div class='src'>
+<pre>
+<span class='k'>using</span> build
+
+<span class='k'>class</span> Build : BuildPod
+<span class='b'>{</span>
+  <span class='k'>new</span> make<span class='b'>()</span>
+  <span class='b'>{</span>
+    podName = <span class='s'>"hello"</span>
+    summary = <span class='s'>"hello world example"</span>
+    depends = <span class='b'>[</span><span class='s'>"sys 1.0+"</span>, <span class='s'>"sql 1.0"</span>, <span class='s'>"fwt 1.0"</span>, <span class='s'>"email 1.0"</span>, <span class='s'>"gfx 1.0"</span>, <span class='s'>"util 1.0"</span>, 
+    <span class='s'>"wisp 1.0"</span>, <span class='s'>"webmod 1.0"</span>, <span class='s'>"web 1.0"</span>, <span class='s'>"concurrent 1.0"</span>, <span class='s'>"compiler 1.0"</span><span class='b'>]</span>
+    srcDirs = <span class='b'>[</span><span class='u'>`fan/`</span>, <span class='u'>`test/`</span>, <span class='u'>`fan/examples/`</span><span class='b'>]</span>
+  <span class='b'>}</span>
+<span class='b'>}</span></pre>
+</div>
+  </body></html>
